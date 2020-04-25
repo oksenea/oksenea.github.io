@@ -2,13 +2,18 @@
     background-color: #f2f9fe;
 }
 
+body {
+    font-family: Raleway;
+    margin: 0;
+}
+
 
 /* Menu */
 
 .logo {
     /* Style for "Smallapps" */
     color: #3c3d42 !important;
-    font-family: "Proxima Nova - Extrabld";
+    font-family: 'Proxima Nova - Extrabld' !important;
     font-size: 28px;
     font-weight: 400;
     margin: 0 !important;
@@ -16,8 +21,6 @@
 }
 
 .menu {
-    /* Style for "Home" */
-    font-family: "Raleway";
     font-size: 13px;
     font-weight: 400;
     vertical-align: middle;
@@ -34,7 +37,9 @@
 }
 
 .kontakt {
-    font-family: "Raleway";
+    color: #3c3d42;
+    font-size: 17px;
+    font-weight: 400;
 }
 
 
@@ -51,7 +56,6 @@ header {
 }
 
 .textfont1 {
-    font-family: "Raleway";
     font-size: 34px;
     font-weight: 700;
     color: #ffffff;
@@ -60,7 +64,6 @@ header {
 
 .textfont2 {
     color: #ffffff;
-    font-family: Raleway;
     font-size: 34px;
     font-weight: 300;
     padding-top: 5px;
@@ -68,7 +71,6 @@ header {
 
 .textfont3 {
     color: #9dc7d1;
-    font-family: Raleway;
     font-size: 13px;
     font-weight: 400;
     line-height: 22.77px;
@@ -78,7 +80,6 @@ header {
 
 .button_h {
     /* Style for "button" */
-    font-family: Raleway;
     font-size: 20px;
     font-weight: 700;
     color: #ffffff;
@@ -109,11 +110,11 @@ header {
 
 .section_1 {
     padding-bottom: 93px;
+    line-height: none !important;
 }
 
 .txtfnt1_1 {
     color: #636c6c;
-    font-family: Raleway;
     font-size: 34px;
     font-weight: 700;
     padding-top: 93px;
@@ -121,10 +122,8 @@ header {
 
 .txtfnt1_2 {
     color: #afb8b8;
-    font-family: Raleway;
     font-size: 15px;
     font-weight: 400;
-    line-height: 22.77px;
     padding-top: 27px;
 }
 
@@ -140,7 +139,6 @@ header {
     font-family: Raleway !important;
     font-size: 15px !important;
     font-weight: 400 !important;
-    line-height: 22.77px;
 }
 
 .txtfnt1_5 {
@@ -156,21 +154,154 @@ header {
 }
 
 .tab-pane {
-    padding-left: 138px;
-    padding-right: 28px;
+    /*нужно сделать изменение отступа при уменьшении размера*/
+    padding-left: 13%;
+    padding-right: 3%;
 }
 
 .list-group-item {
     position: relative;
     display: block;
-    border-right: 1px solid #9fa9a9 !important;
+    border-right: 1px solid #9fa9a9;
     border-left: 0!important;
     border-top: 0!important;
     border-bottom: 0!important;
+    height: 100px;
+    justify-content: center;
+}
+
+.list-group-item.active {
+    z-index: 2;
+    color: #636c6c;
+    background-color: #ffffff;
+    border-right: 11px solid #5dca88;
+}
+
+.list-group-item-action {
+    width: 100%;
+    color: #9fa9a9;
+    text-align: inherit;
+}
+
+.list-group-item-action:hover,
+.list-group-item-action:focus {
+    z-index: 1;
+    color: #9fa9a9;
+    text-decoration: none;
+    background-color: #ffffff;
+}
+
+.list-group-item-action:active {
+    color: #000000;
+    background-color: #5dca88;
+}
+
+.color-pic {
+    color: #9fa9a9;
+    padding-right: 36px;
+    font-size: 46px;
+    font-weight: 400;
+    width: 100px;
+}
+
+.color-pic.active {
+    color: #5dca88;
+}
+
+.color-pic-action {
+    color: #9fa9a9;
+    text-align: inherit;
+}
+
+.color-pic-action:hover,
+.color-pic-action:focus {
+    color: #5dca88;
+}
+
+.color-pic-action:active {
+    color: #5dca88;
+}
+
+.pic-tab {
+    color: #5dca88;
+    font-size: 209px;
+    font-weight: 400;
 }
 
 
 /* section 1 end*/
+
+
+/* section 2*/
+
+.section_2 {
+    background-color: #f2f9fe42;
+}
+
+.line {
+    /* Style for "line" */
+    width: 100px;
+    height: 3px;
+    background-color: #949c9c;
+}
+
+.textfont2_1 {
+    color: #5dca88;
+    font-size: 34px;
+    font-weight: 700;
+    padding-top: 154px;
+}
+
+.textfont2_2 {
+    color: #8c9494;
+    font-size: 34px;
+    font-weight: 400;
+    padding-top: 40px;
+}
+
+.textfont2_3 {
+    color: #8c9494;
+    /*font-size: 15px;*/
+    font-weight: 400;
+    padding-top: 44px;
+    line-height: 22.77px;
+    padding-bottom: 48px;
+}
+
+.button_h2 {
+    /* Style for "button" */
+    font-size: 20px;
+    font-weight: 700;
+    color: #636c6c;
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 3px solid rgba(99, 108, 108, 0.5);
+    line-height: 1.5;
+    border-radius: 3rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    width: 229px;
+    height: 58px;
+    padding: 0 0 !important;
+}
+
+#list-profile-list:hover>.color-pic-action {
+    color: #5dca88;
+}
+
+.list-group-item.active>.color-pic-action {
+    color: #5dca88;
+}
+
+
+/* section 2 end*/
 
 .section_5 {
     padding-bottom: 93px;
@@ -199,7 +330,7 @@ header {
 }
 
 
-/*резиновый макет*/
+/*резиновый макет
 
 @media (max-width: 768px) {
     .header {
@@ -223,3 +354,5 @@ header {
         width: 100%;
     }
 }
+
+*/
