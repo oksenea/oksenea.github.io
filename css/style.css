@@ -303,11 +303,11 @@ header {
 
 .textfont2_3 {
     color: #8c9494;
-    /*font-size: 15px;*/
+    /* font-size: 15px; */
     font-weight: 400;
-    padding-top: 44px;
+    padding-top: 24px;
     line-height: 22.77px;
-    padding-bottom: 48px;
+    padding-bottom: 52px;
 }
 
 .button_h2 {
