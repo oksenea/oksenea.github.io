@@ -28,7 +28,7 @@ body {
 
 .navlink {
     color: currentColor;
-    padding-left: 31px;
+    padding-left: 36px;
 }
 
 .navlink:hover {
@@ -36,7 +36,8 @@ body {
 }
 
 .nav-link {
-    padding-left: 37px !important;
+    padding-left: 32px !important;
+    padding-right: 0!important;
 }
 
 .menu {
@@ -48,7 +49,6 @@ body {
 .kontakt {
     color: #3c3d42;
     font-size: 17px;
-    padding-right: 0;
 }
 
 .fapad {
@@ -72,14 +72,15 @@ header {
     font-size: 34px;
     font-weight: 700;
     color: #ffffff;
-    padding-top: 171px;
+    padding-top: 160px;
 }
 
 .textfont2 {
     color: #ffffff;
-    font-size: 34px;
+    font-size: 33px;
     font-weight: 300;
-    padding-top: 5px;
+    padding-top: 17px;
+    line-height: 0!important;
 }
 
 .textfont3 {
@@ -87,8 +88,8 @@ header {
     font-size: 13px;
     font-weight: 400;
     line-height: 22.77px;
-    padding-top: 39px;
-    padding-bottom: 47px;
+    padding-top: 50px;
+    padding-bottom: 49px;
 }
 
 .button_h {
@@ -122,7 +123,7 @@ header {
 /* section 1*/
 
 .section_1 {
-    padding-bottom: 93px;
+    padding-bottom: 70px;
     line-height: none !important;
 }
 
@@ -130,14 +131,14 @@ header {
     color: #636c6c;
     font-size: 34px;
     font-weight: 700;
-    padding-top: 93px;
+    padding-top: 85px;
 }
 
 .txtfnt1_2 {
     color: #afb8b8;
     font-size: 15px;
     font-weight: 400;
-    padding-top: 27px;
+    padding-top: 21px;
 }
 
 .txtfnt1_3 {
@@ -282,22 +283,22 @@ header {
     width: 100px;
     height: 3px;
     background-color: #949c9c;
-    margin-left: 4px;
-    margin-top: 14px;
+    margin-left: 2px;
+    margin-top: 3px;
 }
 
 .textfont2_1 {
     color: #5dca88;
     font-size: 33px;
     font-weight: 700;
-    padding-top: 154px;
+    padding-top: 145px;
 }
 
 .textfont2_2 {
     color: #8c9494;
     font-size: 34px;
     font-weight: 400;
-    padding-top: 40px;
+    padding-top: 28px;
 }
 
 .textfont2_3 {
@@ -426,6 +427,49 @@ footer {
 .section_4 {
     padding-top: 56px;
     padding-bottom: 58px;
+}
+
+.sub {
+    background-color: #f3f5f5;
+}
+
+
+/*Footer*/
+
+footer {
+    background-color: #2d312f;
+    color: #8c9494;
+    font-weight: 400;
+    line-height: 22.77px;
+    padding-bottom: 44px;
+}
+
+.fotertext1 {
+    font-size: 23px;
+    padding-top: 0 !important;
+    margin-top: 68px;
+}
+
+.fotertext2 {
+    padding: .5rem .5rem;
+    /* Style for "Contact" */
+    color: #8c9494;
+    font-family: Raleway;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 22.77px;
+}
+
+.Social {
+    fill: #5d6461;
+    fill-opacity: 1;
+    font-size: 63px;
+    font-family: 'Socialico', 'Socialico';
+    font-weight: normal;
+    font-style: none;
+    line-height: 24px;
+    margin-top: 27px;
+    margin-bottom: 61px;
 }
 
 
