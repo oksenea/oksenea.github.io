@@ -1,0 +1,25 @@
+/* Контейнер с маркерами */
+
+.owl-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* Сам маркер
+  Здесь body в начале, чтобы заменить стили, которые указаны в самом плагине */
+
+.carousel-3 .owl-carousel button.owl-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: blue;
+    margin: 0 3px;
+}
+
+
+/* Активный маркер */
+
+.carousel-3 .owl-carousel button.owl-dot.active {
+    background: orange;
+}

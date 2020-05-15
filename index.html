@@ -6,22 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
-    <link rel="stylesheet" href="fonts/fonts.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="shortcut icon" href="img/favicon.ico">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
 
+
+    <!-- OwlCarousel2-2.3.4 -->
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+
+    <link rel="shortcut icon" href="img/favicon.ico">
     <title>Курсовая работа</title>
-    <script src="https://kit.fontawesome.com/d5f712bfd6.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="page-top">
     <!--Меню ??fixed-top-->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <!-- sticky-top -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container nav-justified contnopad">
             <a class="navbar-brand js-scroll-trigger logo" href="#page-top"> Smallapps </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +48,7 @@
             </div>
         </div>
     </nav>
-    <!--Баннер-->
+    <!--Banner-->
     <header>
         <div class="container ">
             <div class="row">
@@ -63,7 +67,7 @@
                 </div>
             </div>
     </header>
-    <!--section 1-->
+    <!--section 1 Features-->
     <section id="Features">
         <div class="container section_1">
             <div class="text-center txtfnt1_1">Heading Feature title goes here</div>
@@ -71,7 +75,7 @@
             <div class="row group1_1">
                 <div class="col-md-12 ">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-4 ">
 
                             <div class="list-group txtfnt1_3" id="list-tab" role="tablist">
                                 <a class="middle">
@@ -162,7 +166,7 @@
             </div>
         </div>
     </section>
-    <!--section 2-->
+    <!--section 2 Screenshot-->
     <section id="Screenshot" class="bg1">
         <div class="container">
             <div class="row ">
@@ -179,22 +183,44 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-5 offset-md-2 paddingimg"><img src="img/fone-one.png" alt=""></div>
+                <div class="col-md-4 offset-md-2 d-none d-md-block paddingimg">
+                    <img src="img/fone-one.png" alt=""></div>
             </div>
         </div>
     </section>
-    <!--section 3-->
+    <!--Section 3 Gallery-->
     <div id="Gallery" class="container justify-content-center text-center">
         <div class="textfont3_1 ">Our Latest screenshots gallery</div>
         <div class="textfont3_2  ">Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu. <br> Vestibulum varius non dui at pulvinar. Ut egestas orci in quam sollicitudin aliquet.
         </div>
     </div>
     <div class="container">
-        <!--Карусель-->
+        <div class="row ">
+            <div class="col-md-12 text-center">
+                <div class="owl-carousel owl-theme slide-one">
+
+                    <div class="item">
+                        <img src="img/Mobil.png" alt="">
+                        <p class="InfoItem">Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu.</p>
+                    </div>
+                    <div class="item"> <img src="img/Mobil.png" alt="">
+                        <p class="InfoItem">Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu.</p>
+                    </div>
+                    <div class="item"> <img src="img/Mobil.png" alt="">
+                        <p class="InfoItem">Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu.</p>
+                    </div>
+                    <div class="item"> <img src="img/fone-one.png" alt="">
+                        <p class="InfoItem">Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu.</p>
+                    </div>
+                    <div class="item"> <img src="img/fone-one.png" alt="">
+                        <p class="InfoItem">Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Slider-->
         <div class="row">
             <div class="col-md-12 section_3 ">
-
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                         <span class=" fas fa-angle-left fa-4x" style="color: #000000;" aria-hidden="true"></span>
@@ -204,49 +230,11 @@
                         <div class="carousel-item  active ">
                             <img src="img/gallery.png" alt="">
                         </div>
-                        <div class="carousel-item  "><img src="img/gallery.png" alt="">
-                            <!-- <div class="qwq">
-                                <div class="card" style="width: 18rem;">
-                                    <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap">
-                                    <div class="card-body">
-                                        <p class="card-text"></p>
-                                    </div>
-                                </div>
-                                <div class="card" style="width: 18rem;">
-                                    <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap">
-                                    <div class="card-body">
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                                <div class="card" style="width: 18rem;">
-                                    <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap">
-                                    <div class="card-body">
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                            </div> -->
+                        <div class="carousel-item  ">
+                            <img src="img/gallery.png" alt="">
                         </div>
-                        <div class="carousel-item  "><img src="img/gallery.png" alt="">
-                            <!-- <div class="qwq">
-                                <div class="card" style="width: 18rem;">
-                                    <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap">
-                                    <div class="card-body">
-                                        <p class="card-text"></p>
-                                    </div>
-                                </div>
-                                <div class="card" style="width: 18rem;">
-                                    <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap">
-                                    <div class="card-body">
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                                <div class="card" style="width: 18rem;">
-                                    <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap">
-                                    <div class="card-body">
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                            </div> -->
+                        <div class="carousel-item  ">
+                            <img src="img/gallery.png" alt="">
                         </div>
                     </div>
                     <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
@@ -254,7 +242,6 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-
             </div>
         </div>
     </div>
@@ -262,7 +249,8 @@
     <section class="bg1">
         <div class="container">
             <div class="row ">
-                <div class="col-md-6 section_4"><img src="img/product-geature.png" alt=""> </div>
+                <div class="col-md-6 d-none d-md-block
+                section_4"><img src="img/product-geature.png  " alt=""> </div>
                 <div class="col-md-5">
                     <div class="flex flex-column ">
                         <div class="flex flex-wrap-reverse textfont2_1">Onec ultrices ultricies tellus perfect screens here
@@ -283,33 +271,49 @@
     <section>
         <div class="container">
             <div class="row ">
-                <div class="col-md-12 text-center">What people say about us</div>
+                <div class="col-md-12 text-center testimonials">What people say about us</div>
             </div>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/user.png" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>“ It’s official – I love this app, I couldn’t be without it now.”</h3>
-                            <p>- Ron Burgundy</p>
+            <div class="row ">
+                <div class="col-md-12 text-center">
+                    <div class="owl-carousel owl-theme slide-two">
+                        <div class="item">
+                            <img src="img/user.png" alt="">
+                            <p class="comment">“ It’s official – I love this app, I couldn’t be without it now.”</p>
+                            <p class="username">- Ron Burgundy</p>
                         </div>
+                        <div class="item"> <img src="img/user.png" alt="">
+                            <p class="comment">“ It’s official – I love this app, I couldn’t be without it now.”</p>
+                            <p class="username">- Ron Burgundy</p>
+                        </div>
+                        <div class="item"> <img src="img/user.png" alt="">
+                            <p class="comment">“ It’s official – I love this app, I couldn’t be without it now.”</p>
+                            <p class="username">- Ron Burgundy</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
 
     </section>
     <!--section 6 newsletter-->
     <section class="bg1">
         <div class="container">
             <div class="row ">
-                <div class="col-md-12">zona 6 newsletter</div>
+                <div class="col-12 font-submit">
+                    <i class="far fa-envelope fapad" aria-hidden="true"></i>Subscribe our Newsletter
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-8 offset-md-2" style="left: -15px;">
+
+                    <form class="" action="#">
+                        <div class="form-group mx-sm-3 mb-2 input-group-Submit">
+                            <label for="email" class="sr-only">email</label>
+                            <input type="email" class="form-control" id="email" placeholder="your email address" required>
+                            <button type="submit" class="btn_submit mb-2">Submit</button></div>
+
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -324,7 +328,7 @@
             <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
                 <div class="col-md-8 col-12 Social">
                     <g transform="matrix(1,0,0,1,0,0)"><text dominant-baseline="text-before-edge">
-                            <tspan style="letter-spacing: 12px; font-kerning: normal">ftgnx</tspan>
+                            <tspan style="letter-spacing: 5px; font-kerning: normal">ftgnx</tspan>
                         </text></g>
                 </div>
             </div>
@@ -347,11 +351,59 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
-    </script>
     <script src="js/bootstrap.min.js">
     </script>
     <script src="js/bootstrap.bundle.min.js">
     </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".slide-one").owlCarousel({
+                loop: true, //Зацикливаем слайдер
+                nav: true, //навигация включена
+                /* margin: 10, //Отступ от картинок если выводите больше 1 */
+                pagination: true, // для пагинации ????
+                dots: false, //Отключение точек
+                navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+                responsive: { //Адаптация в зависимости от разрешения экрана
+
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                },
+                autoplay: true, //Автозапуск слайдера
+                smartSpeed: 1000, //Время движения слайда
+                autoplayTimeout: 3000, //Время смены слайда
+
+                autoplayHoverPause: true,
+            });
+            $(".next_button").click(function() {
+                owl.trigger("next.owl.carousel");
+            });
+
+            $(".prev_button").click(function() {
+                owl.trigger("prev.owl.carousel");
+            });
+            $(".slide-two").owlCarousel({
+                margin: 10,
+                loop: true,
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+            })
+        })
+    </script>
+
+
+    <script src="js/kit.fontawesome.js"></script>
 </body>
 
 </html>
