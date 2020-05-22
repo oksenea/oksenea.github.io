@@ -68,7 +68,11 @@ body {
 /* Banner */
 
 header {
+<<<<<<< HEAD
     background-image: url(../img/header.jpg);
+=======
+    background-image: url('../img/Header.jpg');
+>>>>>>> 1d527e867e90d0e3d1eef3eab48d374fd3845d5d
     background-size: cover;
     background-position: center;
     /* min-height: 696px; */
