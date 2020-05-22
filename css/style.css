@@ -208,6 +208,12 @@ header {
     .item img {
         height: 594px;
     }
+    .textfont1 {
+        font-size: 34px;
+        font-weight: 700;
+        color: #ffffff;
+        padding-top: 190px;
+    }
 }
 
 @media (max-width: 999px) {
