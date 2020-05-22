@@ -68,21 +68,10 @@ body {
 /* Banner */
 
 header {
-<<<<<<< HEAD
     background-image: url(../img/header.jpg);
-=======
-    background-image: url('../img/Header.jpg');
->>>>>>> 1d527e867e90d0e3d1eef3eab48d374fd3845d5d
     background-size: cover;
     background-position: center;
     /* min-height: 696px; */
-}
-
-.textfont1 {
-    font-size: 34px;
-    font-weight: 700;
-    color: #ffffff;
-    padding-top: 160px;
 }
 
 .textfont2 {
@@ -152,6 +141,13 @@ header {
 }
 
 @media (min-width: 1000px) {
+    .textfont2_1 {
+        color: #5dca88;
+        font-size: 33px;
+        font-weight: 700;
+        padding-top: 150px;
+        line-height: initial;
+    }
     .txtfnt1_3 {
         color: #9fa9a9 !important;
         font-size: 19px !important;
@@ -215,6 +211,19 @@ header {
 }
 
 @media (max-width: 999px) {
+    .textfont1 {
+        font-size: 34px;
+        font-weight: 700;
+        color: #ffffff;
+        padding-top: 80px;
+    }
+    .textfont2_1 {
+        color: #5dca88;
+        font-size: 33px;
+        font-weight: 700;
+        padding-top: 70px;
+        line-height: initial;
+    }
     .txtfnt1_3 {
         color: #9fa9a9 !important;
         font-size: 12px !important;
@@ -357,14 +366,6 @@ header {
     background-color: #949c9c;
     margin-left: 2px;
     margin-top: 15px;
-}
-
-.textfont2_1 {
-    color: #5dca88;
-    font-size: 33px;
-    font-weight: 700;
-    padding-top: 150px;
-    line-height: initial;
 }
 
 .textfont2_2 {
