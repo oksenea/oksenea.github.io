@@ -1,0 +1,921 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/oksenea/oksenea.github.io/blob/master/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F%20%D0%BF%D0%BE%20%D0%BA%D1%83%D1%80%D1%81%D1%83%20skillfactory\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "background_save": true
+        },
+        "id": "8-tmQjZ-f76G",
+        "outputId": "93cda7ea-d9cb-422f-f20c-711e21751b69"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "hello\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"hello\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "currency = {\n",
+        "\t'AMD': {\n",
+        "\t\t'Name': 'Армянских драмов',\n",
+        "\t\t'Nominal': 100,\n",
+        "\t\t'Value': 133.121\n",
+        "\t},\n",
+        "\n",
+        "\t'AUD': {\n",
+        "\t\t'Name': 'Австралийский доллар',\n",
+        "\t\t'Nominal': 1,\n",
+        "\t\t'Value': 45.5309\n",
+        "\t},\n",
+        "\n",
+        "\t'INR': {\n",
+        "\t\t'Name': 'Индийских рупий',\n",
+        "\t\t'Nominal': 100,\n",
+        "\t\t'Value': 92.9658\n",
+        "\t},\n",
+        "\n",
+        "\t'MDL': {\n",
+        "\t\t'Name': 'Молдавских леев',\n",
+        "\t\t'Nominal': 10,\n",
+        "\t\t'Value': 36.9305\n",
+        "\t},\n",
+        "}\n",
+        "kyrs=[]#\n",
+        "k={}\n",
+        "aa=0\n",
+        "a=0\n",
+        "for values in currency:\n",
+        "    #print(values,'\\n',currency[values])\n",
+        "    #for x in currency[values]:\n",
+        "        #print(x,currency[values][x])\n",
+        "    kyrs.append(currency[values]['Value']/currency[values]['Nominal'])\n",
+        "    k[values]=(currency[values]['Value']/currency[values]['Nominal'])\n",
+        "    #print(kyrs)\n",
+        "#print(k)\n",
+        "aa=min(k.values())\n",
+        "a=[key for key in k if k[key]==aa]\n",
+        "print('Минимальный курс у валюты {0} и составляет {1}'.format(a,aa))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AaGT0CG3pCun",
+        "outputId": "4aa847c3-7c0e-4ef1-e625-8fcd9a13f58c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Минимальный курс у валюты ['INR'] и составляет 0.929658\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "KhF_ki3nD-gn"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "results = [\n",
+        "\t{'cost': 98, 'source': 'vk'},\n",
+        "\t{'cost': 153, 'source': 'yandex'},\n",
+        "\t{'cost': 110, 'source': 'facebook'},\n",
+        "]\n",
+        "k=[]\n",
+        "kk={}\n",
+        "for i in results:\n",
+        "\tk.append(i['cost'])\n",
+        "\tkk[i['source']]=i['cost']\n",
+        "print(kk)\n",
+        "a=0\n",
+        "aa=0\n",
+        "aa=min(kk.values())\n",
+        "a=[key for key in kk if kk[key]==aa]\n",
+        "print('Минимальные затраты на ресурсе {0} и равны {1}'.format(a,aa))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "7cd6094d-fa33-4e36-8775-a3e2717ab8a5",
+        "id": "4uGYum_JEByR"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'vk': 98, 'yandex': 153, 'facebook': 110}\n",
+            "Минимальные затраты на ресурсе ['vk'] и равны 98\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "bodycount = {\n",
+        "\t'Проклятие Черной жемчужины': {\n",
+        "\t\t'человек': 17\n",
+        "\t}, \n",
+        "\n",
+        "\t'Сундук мертвеца': {\n",
+        "\t\t'человек': 56,\n",
+        "\t\t'раков-отшельников': 1\n",
+        "\t},\n",
+        "\n",
+        "\t'На краю света': {\n",
+        "\t\t'человек': 88\n",
+        "\t},\n",
+        "\n",
+        "\t'На странных берегах': {\n",
+        "\t\t'человек': 56,\n",
+        "\t\t'русалок': 2,\n",
+        "\t\t'ядовитых жаб': 3,\n",
+        "\t\t'пиратов зомби': 2\n",
+        "\t}\n",
+        "}\n",
+        "k=[]\n",
+        "for name in bodycount:#bodycount исходный словарь с элементами словарями\n",
+        "\tprint ('{0} - Это содержимое словаря (элементы словаря) \"{1}\" который в свою очередь является ключом словаря bodycount' .format(bodycount[name],name))#вывод значения элемента исходного словаря. bodycount - словарь, name - ключ, bodycount[name]-значение ключа)\n",
+        "\tfor num in bodycount[name]: #bodycount[name] - доступ к значению исх словаря, bodycount[name]-вложенный словарь\n",
+        "\t\tk.append(bodycount[name][num])#bodycount[name][num]-значение элемента вложенного словаря, num-ключ\n",
+        "\t\tprint('{0} - Это значение ключа \"{1}\"' .format(bodycount[name][num],num))\n",
+        "print('\\nОтвет на поставленную задачу: '+ str(sum(k)))"
+      ],
+      "metadata": {
+        "id": "aIl8HQL3d-29",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "dfb59cf6-63be-49e5-974d-40c79bb0f92a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'человек': 17} - Это содержимое словаря (элементы словаря) \"Проклятие Черной жемчужины\" который в свою очередь является ключом словаря bodycount\n",
+            "17 - Это значение ключа \"человек\"\n",
+            "{'человек': 56, 'раков-отшельников': 1} - Это содержимое словаря (элементы словаря) \"Сундук мертвеца\" который в свою очередь является ключом словаря bodycount\n",
+            "56 - Это значение ключа \"человек\"\n",
+            "1 - Это значение ключа \"раков-отшельников\"\n",
+            "{'человек': 88} - Это содержимое словаря (элементы словаря) \"На краю света\" который в свою очередь является ключом словаря bodycount\n",
+            "88 - Это значение ключа \"человек\"\n",
+            "{'человек': 56, 'русалок': 2, 'ядовитых жаб': 3, 'пиратов зомби': 2} - Это содержимое словаря (элементы словаря) \"На странных берегах\" который в свою очередь является ключом словаря bodycount\n",
+            "56 - Это значение ключа \"человек\"\n",
+            "2 - Это значение ключа \"русалок\"\n",
+            "3 - Это значение ключа \"ядовитых жаб\"\n",
+            "2 - Это значение ключа \"пиратов зомби\"\n",
+            "\n",
+            "Ответ на поставленную задачу: 225\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "arrivals = {\n",
+        "\t'Париж': {'время': '15:25', 'статус': 'ожидается', 'рейс': ['Аэрофлот']},\n",
+        "\t'Пекин': {'время': '15:35', 'статус': 'опаздывает', 'рейс': ['China Southern Airlines', 'Россия']},\n",
+        "\t'Лиссабон': {'время': '15:40', 'статус': 'ожидается', 'рейс': ['Nordwind', 'Аэрофлот']},\n",
+        "}\n",
+        "print(len(arrivals['Пекин']['рейс']))\n",
+        "print(arrivals['Пекин']['рейс'][0] + arrivals['Пекин']['рейс'][1])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RuqzVfCEBJ-e",
+        "outputId": "ab23df0d-07fa-454d-8211-48df621224c7"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n",
+            "China Southern AirlinesРоссия\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import collections\n",
+        "c = collections.Counter()\n",
+        "for word in ['spam', 'egg', 'spam', 'counter', 'counter', 'counter']:\n",
+        "    c[word] += 1\n",
+        "\n",
+        "print(c)\n",
+        "print(c['counter'])\n",
+        "print(c['collections'])\n",
+        "c = collections.Counter(a=4, b=2, c=0, d=-2)\n",
+        "list(c.elements())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "t_JcqiJjiAxI",
+        "outputId": "bc568653-5aa3-4488-8380-9b7ff8114690"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Counter({'counter': 3, 'spam': 2, 'egg': 1})\n",
+            "3\n",
+            "0\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['a', 'a', 'a', 'a', 'b', 'b']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 118
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "proverb = 'Программисты - это устройства, преобразующие кофеин в код.'\n",
+        "new_proverb = list(proverb)\n",
+        "for j in new_proverb:\n",
+        "  if j==' ':\n",
+        "    continue\n",
+        "  else:\n",
+        "    for i in range(0,len(j)-1,2):\n",
+        "        t = j[i]\n",
+        "        tt= j[i+1]\n",
+        "        j += tt+t\n",
+        "print(''.join(new_proverb))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SkiL2NMjOLlD",
+        "outputId": "b4e2a652-4b46-45da-9ff1-21b7bc706951"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Программисты - это устройства, преобразующие кофеин в код.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import re\n",
+        "proverb = 'Программисты - это устройства, преобразующие кофеин в код.'\n",
+        "new_proverb = re.split('\\s',proverb)\n",
+        "a=\"\"\n",
+        "str(a)\n",
+        "b=''\n",
+        "ind=0\n",
+        "slovonew=\"\"\n",
+        "for slovo in new_proverb:\n",
+        "  \n",
+        "  ind=new_proverb.index(slovo)\n",
+        "  if len(slovo)%2==0:\n",
+        "    for b in range(0,len(slovo),2):\n",
+        "      a=slovo[b+1]\n",
+        "      b=slovo[b]\n",
+        "      slovonew+=a+b\n",
+        "  else:\n",
+        "    for b in range(0,len(slovo),2):\n",
+        "      if len(slovo)-1==0:\n",
+        "        slovonew+=slovo[b]\n",
+        "      elif b!=len(slovo)-1:\n",
+        "        a=slovo[b+1]\n",
+        "        b=slovo[b]\n",
+        "        slovonew+=a+b\n",
+        "      else:\n",
+        "        slovonew+=slovo[b]\n",
+        "  new_proverb[ind]=slovonew\n",
+        "  slovonew=''\n",
+        "  \n",
+        "n=(' '.join(new_proverb))\n",
+        "new_proverb=n\n",
+        "print(n)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "a845ce47-a65f-4dfa-e24d-2bce0c8ad6e8",
+        "id": "05aEtncDQ6Ji"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "рПгоарммсиыт - тэо суртйотсав, рпоербзаюуище окефни в ок.д\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "proverb = 'Программисты - это устройства, преобразующие кофеин в код.'\n",
+        "\n",
+        "new_proverb = list(proverb)\n",
+        "for i in range(len(new_proverb) - 1):\n",
+        "    if i % 2 == 0:\n",
+        "        t = new_proverb[i]\n",
+        "        tt = new_proverb[i + 1]\n",
+        "        new_proverb[i] = tt\n",
+        "        new_proverb[i + 1] = t\n",
+        "        \n",
+        "new_proverb=''.join(new_proverb)\n",
+        "print(new_proverb)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dbabR_5fXveE",
+        "outputId": "038c85d9-a922-4b2f-c2c3-8b84b3c5bb92"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "рПгоарммсиыт- э оту тсорсйвт,ап ербоарузщюеик фоие н вок.д\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "inverted_word=''\n",
+        "basic_word = 'программирование'\n",
+        "for i in range(len(basic_word)-1,-1,-1):\n",
+        "  inverted_word+=basic_word[i]\n",
+        "if inverted_word==basic_word:\n",
+        "  print('Слово \"{}\" полиндром'.format(basic_word))\n",
+        "else:\n",
+        "  print('Слово \"{}\" - не полиндром'.format(basic_word))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "564NuA5nfDx1",
+        "outputId": "cc2d20b1-8a53-44da-bca4-f1f335bfe970"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Слово \"программирование\" - не полиндром\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "number = 56.257\n",
+        "s=0\n",
+        "pos=str(number)\n",
+        "pos=pos[pos.find('.')+1:]\n",
+        "for i in pos:\n",
+        "  s+=int(i)\n",
+        "print(s)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DE6de_iqrMrw",
+        "outputId": "1a6b350f-f96d-4dde-967c-8c19c1cded1c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "14\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "emails_list = ['vasya@mail.ru', \n",
+        "          'akakiy@yandex.ru', \n",
+        "          'spyderman@yandex.ru', \n",
+        "          'XFiles@gmail.com', \n",
+        "          'hello@mail.ru', \n",
+        "          'noname@gmail.com', \n",
+        "          'DonaldTrump@mail.ru', \n",
+        "          'a768#af@yandex.ru', \n",
+        "          'Ivan_Ivanovich@yandex.ru', \n",
+        "          'thebestmail@yandex.ru']\n",
+        "domain_d={}\n",
+        "domain_list=[i[(i.find('@')+1):] for i in emails_list]\n",
+        "from collections import Counter\n",
+        "domain_d=Counter(domain_list)\n",
+        "print(dict(domain_d))"
+      ],
+      "metadata": {
+        "id": "VYCARXIEZUxC",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "afbea026-485f-4edb-9dcd-80029d4a65e8"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'mail.ru': 3, 'yandex.ru': 5, 'gmail.com': 2}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "domain_d"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kivUsZtSkRQP",
+        "outputId": "10ad578b-9d13-4be0-91d0-01611fb56b54"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "Counter({'gmail.com': 2, 'mail.ru': 3, 'yandex.ru': 5})"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 2
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "domain_list"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2nN37iDCksMP",
+        "outputId": "1183f061-b18e-4136-ce00-0f6a4a838a26"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['mail.ru',\n",
+              " 'yandex.ru',\n",
+              " 'yandex.ru',\n",
+              " 'gmail.com',\n",
+              " 'mail.ru',\n",
+              " 'gmail.com',\n",
+              " 'mail.ru',\n",
+              " 'yandex.ru',\n",
+              " 'yandex.ru',\n",
+              " 'yandex.ru']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 8
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "string = 'Интернет-открытки - это лучшее средство для мужчины сказать женщине о своих чувствах прямо в глаза.'\n",
+        "secret = string[24:30]\n",
+        "new_string = string.replace(secret.lower(), secret.upper()) "
+      ],
+      "metadata": {
+        "id": "BqODGN7SnVaw"
+      },
+      "execution_count": 6,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "secret"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "rGBiSwtbnXd9",
+        "outputId": "2ca8361a-05d2-4168-d9a0-b1094d36c292"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'лучшее'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 7
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "string = 'Привет, Андрей!'\n",
+        "import re \n",
+        "string =(re.sub(r'[^\\w ]',r':)',string))\n",
+        "print(string)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6fqwtGcgoXKN",
+        "outputId": "e867906e-ec52-4ddc-d3e6-c7b1931ce595"
+      },
+      "execution_count": 57,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Привет:) Андрей:)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "string = 'Тяжёлая интернет-зависимость - это когда ты выходишь из интернета, а он из тебя нет.'\n",
+        "import re \n",
+        "string =(re.sub(r'[^\\w ]',r':)',string))\n",
+        "print(string)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jBB2-LeNreoD",
+        "outputId": "8e89ae1d-8d46-4392-92c7-b73e59b47cac"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Тяжёлая интернет:)зависимость :) это когда ты выходишь из интернета:) а он из тебя нет:)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = 'Севастиан'\n",
+        "soglasnie=('б, в, г, д, ж, з, й, к, л, м, н, п, р, с, т, ф, х, ц, ч, ш, щ').split(', ')\n",
+        "glasnie=('а, у, о, ы, э, я, ю, ё, и, е').split(', ')\n",
+        "for i in range(len(name)):\n",
+        "  if name[i].lower() in glasnie:\n",
+        "    print(\"{} - гласная буква\" .format(name[i]))\n",
+        "  elif name[i].lower() in soglasnie:\n",
+        "    print(\"{} - согласная буква\" .format(name[i]))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ppcs5bqYuwib",
+        "outputId": "d5aa22d0-770f-46f5-be24-308952eb8843"
+      },
+      "execution_count": 72,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "С - согласная буква\n",
+            "е - гласная буква\n",
+            "в - согласная буква\n",
+            "а - гласная буква\n",
+            "с - согласная буква\n",
+            "т - согласная буква\n",
+            "и - гласная буква\n",
+            "а - гласная буква\n",
+            "н - согласная буква\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "text = '''Разработка языка Python была начата в конце 1980-х годов сотрудником голландского института CWI Гвидо ван Россумом. \n",
+        "      Для распределённой ОС Amoeba требовался расширяемый скриптовый язык, и Гвидо начал писать Python на досуге, позаимствовав \n",
+        "      некоторые наработки для языка ABC (Гвидо участвовал в разработке этого языка, ориентированного на обучение программированию). \n",
+        "      В феврале 1991 года Гвидо опубликовал исходный текст в группе новостей alt.sources. Название языка произошло вовсе не от вида пресмыкающихся. \n",
+        "      Автор назвал язык в честь популярного британского комедийного телешоу 1970-х \"Летающий цирк Монти Пайтона\".'''"
+      ],
+      "metadata": {
+        "id": "e2UnDxNp9Sz5"
+      },
+      "execution_count": 126,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "re.search('\\d+',text)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1PqkUsM39qWz",
+        "outputId": "6abcbfb4-639e-4730-999d-e65f2db389b5"
+      },
+      "execution_count": 75,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "<re.Match object; span=(44, 48), match='1980'>"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 75
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "re.findall('\\d+',text)"
+      ],
+      "metadata": {
+        "id": "XcVb-BgC4LqR"
+      },
+      "execution_count": 16,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "re.search('[A-Za-z]+',text)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HDQa591H-XUe",
+        "outputId": "4f28c25f-edba-408d-c49f-c716bc226cbf"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "<re.Match object; span=(17, 23), match='Python'>"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 12
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "re.findall('[A-Za-z]+',text)"
+      ],
+      "metadata": {
+        "id": "8xrJQehj4FAS"
+      },
+      "execution_count": 13,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "re.search('[А-Яа-я]+ка',text)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HpNq5-Rc4Gn8",
+        "outputId": "79f24b6a-489d-4ce5-c8fa-53064dad18a3"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "<re.Match object; span=(0, 10), match='Разработка'>"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 14
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "re.findall('[А-Яа-я]+ка',text)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9rkOZi4q3sAe",
+        "outputId": "3ea1feb3-10bf-4eb5-f20a-38a26bd5b319"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "<re.Match object; span=(0, 10), match='Разработка'>"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 8
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "re.findall('[^\\W|\\s][А-Яа-яЁё]*[а|А][А-Яа-яЁё]{2}[И|и][А-Яа-яЁё]*[\\W|\\s$]',text)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1NBteYsF4hLP",
+        "outputId": "bfe33848-cb67-477f-f6ff-c491850a3d85"
+      },
+      "execution_count": 95,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['расширяемый ', 'программированию)', 'пресмыкающихся.', 'Летающий ']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 95
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from collections import Counter\n",
+        "Pattern=re.compile('(?ui:[аеёиоуыэюя])\\s(?ui:[бвгджзйклмнпрстфхцчшщ])')#(?ui:...) Важно! Если вы работаете с юникодом, то вышеуказанный ключ не сработает. Нужно добавить UNICODE_CASE, т.е. ?ui.\n",
+        "len(Pattern.findall(text))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SUbIIpZA9zoA",
+        "outputId": "f7f2136c-4a58-46fc-8282-ff4acb348c9c"
+      },
+      "execution_count": 130,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "22"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 130
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "htcjaHxzEPu2"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyNeAWW1pFFZjifMd4nKW3E+",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
